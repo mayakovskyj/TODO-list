@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+    <title>TODO list</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+    <link rel='stylesheet' href="styles.css">
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no" >
+
+<ul class="list">
+    <!-- Hat -->
+    <li class="list-item">
+        <label class="check--label hat">
+            <span class="check--label-text hat-text">List of things to do:</span>
+            <span class="sort">▼</span>
+            <span class="new-note" id="newNote">+</span>
+            <div class="dropdown-content">
+                <p id="by-name">Sort by name</p>
+                <p id="by-number">Sort by number</p>
+            </div>
+        </label>
+    </li>
+
+    <!-- Hidden li to add new item -->
+    <li class="list-item input" id="new-task">
+        <label class="check--label">
+            <span class="check--label-text"><input placeholder="New Task" class = "inputForm"/></span>
+            <span class="add-new-note">+</span>
+        </label>
+    </li>
+
+    <li class="list-item">
+        <input type="checkbox" class="hidden-box" id="1" />
+        <label for="1" class="check--label">
+            <span class="check--label-box"></span>
+            <span class="check--label-text">1. Wash dishes</span>
+            <span class="remove">×</span>
+        </label>
+    </li>
+    <li class="list-item">
+        <input type="checkbox" class="hidden-box" id="2" />
+        <label for="2" class="check--label">
+            <span class="check--label-box"></span>
+            <span class="check--label-text">2. Go for a walk</span>
+            <span class="remove">×</span>
+        </label>
+    </li>
+    <li class="list-item">
+        <input type="checkbox" class="hidden-box" id="3" />
+        <label for="3" class="check--label">
+            <span class="check--label-box"></span>
+            <span class="check--label-text">3. Make some projects</span>
+            <span class="remove">×</span>
+        </label>
+    </li>
+</ul>
+<script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
+ 
